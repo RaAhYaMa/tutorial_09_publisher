@@ -19,3 +19,13 @@ The URL "amqp://guest:guest@localhost:5672" is a connection string that specifie
 ### Subscriber Console Screenshot
 
 ![Subscriber Console](static/img/Screenshot%202025-05-13%20132506.png)
+
+---
+
+### Spike Explanation
+
+The spike in the RabbitMQ Management screenshot is related to running the publisher because it represents the sudden increase in message publishing activity when the publisher program is executed.
+
+When the publisher program runs, it sends 5 `UserCreatedEventMessage` instances to the message broker, which causes a spike in the RabbitMQ queue. This spike is visible in the RabbitMQ Management screenshot, which shows the message queue activity over time.
+
+![RabbitMQ Management](static/img/Screenshot%202025-05-13%20at%2013-31-40%20RabbitMQ%20Management.png)
